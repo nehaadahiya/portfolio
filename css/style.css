@@ -1,4 +1,5 @@
-@import url("ttps://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
 
 *{
     margin: 0;
@@ -43,7 +44,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    z-index:100;
+    z-index: 100;
 }
 
 .header.sticky{
@@ -57,9 +58,9 @@ body{
     cursor: default;
 }
 
-.navbar{
+.navbar a{
     font-size: 1.7rem;
-    color: var(--text-color) !important ; 
+    color: var(--text-color); 
     margin-left: 4rem;
     transition: .3s;
 } 
@@ -145,6 +146,7 @@ span{
 .btn{
     display: inline-block;
     padding: 1rem 2.8rem;
+    margin:0.5rem;
     background: var(--main-color);
     border-radius: 4rem;
     box-shadow: 0 0 1rem var(--main-color);
@@ -178,7 +180,7 @@ span{
 
 .about-content h2{
     text-align: left;
-line-height: 1.2;
+    line-height: 1.2;
 }
 
 .about-content h3{
@@ -187,7 +189,7 @@ line-height: 1.2;
 
 .about-content p{
     font-size: 1.6rem;
-    margin: 2rem 0 3 rem;
+    margin: 2rem 0 3rem;
 }
 
 .services h2 {
@@ -380,6 +382,157 @@ line-height: 1.2;
     font-size: 2.4rem;
     color: var(--second-bg-color);
 }
+
+/* --------- Skills Section --------- */
+p {
+  font-size: 1.6rem; 
+  line-height: 1.6;  
+  max-width: 75ch;  
+  margin-bottom: 1.5rem; 
+}
+.skills-container {
+  display: flex;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+
+.skills-column {
+  flex: 1 1 40rem;
+}
+
+.skills-column h3 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.skill-bar {
+  margin-bottom: 1.5rem;
+}
+
+.skill-bar span {
+  display: block;
+  font-size: 1.6rem;
+  margin-bottom: 0.5rem;
+}
+
+.progress {
+  background: var(--second-bg-color);
+  height: 1.5rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.progress div {
+  height: 100%;
+  background: var(--main-color);
+  border-radius: 2rem;
+  transition: width 1s ease-in-out;
+}
+
+/* --------- Timeline Section --------- */
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 4rem; /* Increase to give more space for dots */
+  border-left: 2px solid var(--main-color);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2.5rem;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -2.1rem; /* Move dot more left to line up properly */
+  top: 0.2rem;
+  width: 1.6rem;
+  height: 1.6rem;
+  background: var(--main-color);
+  border-radius: 50%;
+  border: 2px solid var(--bg-color);
+}
+
+.timeline {
+  position: relative;
+  margin: 2rem 0;
+  padding-left: 3rem;
+  border-left: 2px solid var(--main-color);
+}
+
+.timeline-item {
+  margin-bottom: 2.5rem;
+  position: relative;
+}
+
+.timeline-item::before {
+  content: '';
+  position: absolute;
+  left: -1.1rem;
+  top: 0;
+  width: 2rem;
+  height: 2rem;
+  background: var(--main-color);
+  border-radius: 50%;
+}
+
+.timeline-item h3 {
+  font-size: 1.8rem;
+  color: var(--main-color);
+}
+
+.timeline-item h4 {
+  font-size: 1.6rem;
+  margin-top: .5rem;
+}
+
+.timeline-item p {
+  font-size: 1.5rem;
+  margin-top: .5rem;
+}
+
+/* --------- Certifications Section --------- */
+.certifications ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.certifications li {
+  margin: 1.2rem 0;
+}
+
+.certifications a {
+  font-size: 1.6rem;
+  color: var(--main-color);
+  transition: 0.3s;
+}
+
+.certifications a:hover {
+  text-decoration: underline;
+}
+
+/* --------- Coursework Section --------- */
+.coursework ul {
+  list-style: none;
+  padding: 0;
+}
+
+.coursework li {
+  position: relative;
+  padding-left: 2.5rem;
+  margin: 1.2rem 0;
+  font-size: 1.6rem;
+}
+
+.coursework li::before {
+  content: "🎓";
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
 
 
 /* BREAKPOINTS */
